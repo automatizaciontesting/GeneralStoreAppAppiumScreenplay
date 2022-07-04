@@ -9,14 +9,18 @@ import net.serenitybdd.screenplay.actions.Enter;
 import static com.generalstore.ui.HomeStore.TXT_NAME;
 
 public class AddName implements Task {
-    public static AddName firstName() {
-        return Tasks.instrumented(AddName.class);
+    private String nameUser;
+    public AddName(String nameUser){
+        this.nameUser=nameUser;
+    }
+    public static AddName firstName(String nameUser) {
+        return Tasks.instrumented(AddName.class,nameUser);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue("Hervin").into(TXT_NAME)
+                Enter.theValue(this.nameUser).into(TXT_NAME)
         );
     }
 }

@@ -148,7 +148,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-07-2022 14:47</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 04-07-2022 15:56</span>
     <br style="clear:left"/>
 </div>
 
@@ -183,9 +183,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-exclamation-triangle-fill error-icon fa-2x' title='ERROR'></i></a></span>
                             <span class="test-case-title">
-                                <span class="success-color">Buy some items in General Store
+                                <span class="error-color">Buy some items in General Store
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -202,62 +202,98 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">No such element exception: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall"
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="bi bi-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>org.openqa.selenium.NoSuchElementException </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)<br />io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)<br />io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)<br />io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)<br />io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)<br />io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)<br />io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)<br />io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)<br />io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)<br />io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)<br />io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)<br />com.generalstore.interactions.Navigate.performAs(Navigate.java:25)<br />com.generalstore.stepsdefinition.BuyProductsStepsDefinitions.navigateOnWebview(BuyProductsStepsDefinitions.java:58)<br />io.cucumber.java.Invoker.doInvoke(Invoker.java:66)<br />io.cucumber.java.Invoker.invoke(Invoker.java:24)<br />io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)<br />io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)<br />io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)<br />io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)<br />io.cucumber.core.runner.TestStep.executeStep(TestStep.java:92)<br />io.cucumber.core.runner.TestStep.run(TestStep.java:64)<br />io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)<br />io.cucumber.core.runner.TestCase.run(TestCase.java:104)<br />io.cucumber.core.runner.Runner.runPickle(Runner.java:73)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:135)<br />io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:27)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:259)<br />io.cucumber.junit.CucumberSerenityRunner.runChild(CucumberSerenityRunner.java:58)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+                <div class="panel-body">
+                    <a href="pagesource7027758890579114350.html" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="a402d5109e3bcd99c5cdde6db9a1c65e105f25231291688efcceec999a300010.png" title=" Given &quot;Anna&quot; has a list of producto" width="1080"/>
-                <img src="a402d5109e3bcd99c5cdde6db9a1c65e105f25231291688efcceec999a300010.png" title=" Anna load home" width="1080"/>
-                <img src="626f6f650340ffc7549fe064a6c76f7aa3454deb1627b4fd096b8579ba3f2be9.png" title=" Anna clicks on Listview country" width="1080"/>
-                <img src="65338755e666754efa5a8cac6ca4af98ccdfd3f94827e3e5a958ce074f311918.png" title=" Anna clicks on Listview country (completed)" width="1080"/>
-                <img src="65338755e666754efa5a8cac6ca4af98ccdfd3f94827e3e5a958ce074f311918.png" title=" Anna search list view" width="1080"/>
-                <img src="5ec18a808973f8927783c28d646fe79d999618f9a241c2fbba89e2a63a9b163c.png" title=" Anna search list view (completed)" width="1080"/>
-                <img src="5ec18a808973f8927783c28d646fe79d999618f9a241c2fbba89e2a63a9b163c.png" title=" Anna add name" width="1080"/>
-                <img src="5ec18a808973f8927783c28d646fe79d999618f9a241c2fbba89e2a63a9b163c.png" title=" Anna enters 'Hervin' into Textbox name" width="1080"/>
-                <img src="44b90b8f7899ce95a9b4088aa986a9c85b60bf7cef9b30dfc2f2693acf8b0022.png" title=" Anna enters 'Hervin' into Textbox name (completed)" width="1080"/>
-                <img src="44b90b8f7899ce95a9b4088aa986a9c85b60bf7cef9b30dfc2f2693acf8b0022.png" title=" Anna add name (completed)" width="1080"/>
-                <img src="44b90b8f7899ce95a9b4088aa986a9c85b60bf7cef9b30dfc2f2693acf8b0022.png" title=" Anna select gender" width="1080"/>
-                <img src="44b90b8f7899ce95a9b4088aa986a9c85b60bf7cef9b30dfc2f2693acf8b0022.png" title=" Anna clicks on Radiobutton female" width="1080"/>
-                <img src="6a3fac8c2727e0d55221c3f104de3d9dac4845a1896f9ebbc38230696176759e.png" title=" Anna clicks on Radiobutton female (completed)" width="1080"/>
-                <img src="6a3fac8c2727e0d55221c3f104de3d9dac4845a1896f9ebbc38230696176759e.png" title=" Anna select gender (completed)" width="1080"/>
-                <img src="dfdbf7c20ed482ac6ba822454f0ee0cda7106d66135d14cd28e3771f09bd8057.png" title=" Anna select go shop" width="1080"/>
-                <img src="dfdbf7c20ed482ac6ba822454f0ee0cda7106d66135d14cd28e3771f09bd8057.png" title=" Anna clicks on Button lets shop" width="1080"/>
-                <img src="2ca5ef3ddd51effed2c1bb985559edaa98da964fa7672a3ad171ecea24fcf2b2.png" title=" Anna clicks on Button lets shop (completed)" width="1080"/>
-                <img src="2ca5ef3ddd51effed2c1bb985559edaa98da964fa7672a3ad171ecea24fcf2b2.png" title=" Anna select go shop (completed)" width="1080"/>
-                <img src="2ca5ef3ddd51effed2c1bb985559edaa98da964fa7672a3ad171ecea24fcf2b2.png" title=" Anna load home (completed)" width="1080"/>
-                <img src="28bbc23283c9b46a5ade9a8efd926f8b19af18d84f533bb00cd6d81db2186a75.png" title=" Given &quot;Anna&quot; has a list of producto (completed)" width="1080"/>
-                <img src="cadf6a16540cb2159a0650f473b45558f62aa774f17edc8d8c35c13df0a7506f.png" title=" When select the productos and add to cart
+                <img src="b921e63f47f90819c32d908ce74d26340976a666b414b8862650a782f7e659b2.png" title=" Given &quot;Anna&quot; has a list of producto
+| Country | Name | Gender |
+| Albania | Hervin | Male |" width="1080"/>
+                <img src="b921e63f47f90819c32d908ce74d26340976a666b414b8862650a782f7e659b2.png" title=" Anna load home" width="1080"/>
+                <img src="0764a6da9de04ada6198485601d87787edb097710684b395a0ea763b23bcdfcb.png" title=" Anna clicks on Listview country" width="1080"/>
+                <img src="d56315a2ed88612de8d1636fcfef88dc7591c9226aaa9b77664e210e5976586f.png" title=" Anna clicks on Listview country (completed)" width="1080"/>
+                <img src="d56315a2ed88612de8d1636fcfef88dc7591c9226aaa9b77664e210e5976586f.png" title=" Anna search list view" width="1080"/>
+                <img src="7c900cc45794e558661d59f67a6166a3d8a641ce6d73285b21eaeedb8c8a6327.png" title=" Anna search list view (completed)" width="1080"/>
+                <img src="7c900cc45794e558661d59f67a6166a3d8a641ce6d73285b21eaeedb8c8a6327.png" title=" Anna add name" width="1080"/>
+                <img src="7c900cc45794e558661d59f67a6166a3d8a641ce6d73285b21eaeedb8c8a6327.png" title=" Anna enters 'Hervin' into Textbox name" width="1080"/>
+                <img src="cd1c1064e761850e936c128fb703c5329c254548974dc64c4bd99358ba6feb66.png" title=" Anna enters 'Hervin' into Textbox name (completed)" width="1080"/>
+                <img src="cd1c1064e761850e936c128fb703c5329c254548974dc64c4bd99358ba6feb66.png" title=" Anna add name (completed)" width="1080"/>
+                <img src="cd1c1064e761850e936c128fb703c5329c254548974dc64c4bd99358ba6feb66.png" title=" Anna select gender" width="1080"/>
+                <img src="cd1c1064e761850e936c128fb703c5329c254548974dc64c4bd99358ba6feb66.png" title=" Anna clicks on Radiobutton male" width="1080"/>
+                <img src="26235b07c54b21ee44601074206b3cba1627271c5a04012add6f58e6e137f270.png" title=" Anna clicks on Radiobutton male (completed)" width="1080"/>
+                <img src="26235b07c54b21ee44601074206b3cba1627271c5a04012add6f58e6e137f270.png" title=" Anna select gender (completed)" width="1080"/>
+                <img src="cb5522cd106b96299dd14abc1b50fa710fd9b87ea22bbb76d9dacabe524a0b4e.png" title=" Anna select go shop" width="1080"/>
+                <img src="cb5522cd106b96299dd14abc1b50fa710fd9b87ea22bbb76d9dacabe524a0b4e.png" title=" Anna clicks on Button lets shop" width="1080"/>
+                <img src="9ff6a0e18bb8189ab56b3e4c015440c7b5b0fe989b30567e7b0770dfdb2cfceb.png" title=" Anna clicks on Button lets shop (completed)" width="1080"/>
+                <img src="9ff6a0e18bb8189ab56b3e4c015440c7b5b0fe989b30567e7b0770dfdb2cfceb.png" title=" Anna select go shop (completed)" width="1080"/>
+                <img src="615bc91130818198f89bfc571254ebf87b02388cf991671f3431b175a379c2a8.png" title=" Anna load home (completed)" width="1080"/>
+                <img src="615bc91130818198f89bfc571254ebf87b02388cf991671f3431b175a379c2a8.png" title=" Given &quot;Anna&quot; has a list of producto
+| Country | Name | Gender |
+| Albania | Hervin | Male | (completed)" width="1080"/>
+                <img src="ef5e5661be359d707542d7db01f78959d20d62a8c5568c4da8ae1911c44fb307.png" title=" When select the products and add to cart
 | Product |
 | PG 3 |
 | Jordan Lift Off |" width="1080"/>
-                <img src="cadf6a16540cb2159a0650f473b45558f62aa774f17edc8d8c35c13df0a7506f.png" title=" Anna select products" width="1080"/>
-                <img src="cadf6a16540cb2159a0650f473b45558f62aa774f17edc8d8c35c13df0a7506f.png" title=" Anna clicks on Submit button" width="1080"/>
-                <img src="72b08ad8acb54541bf754261be09c7091a97e5f1cc836c5ae70d6c5acb407e8d.png" title=" Anna clicks on Submit button (completed)" width="1080"/>
-                <img src="c726bb0cdb1b447cbf019b6b6432aa80c62dd1e019c59b2075abe72a047f696b.png" title=" Anna clicks on Submit button" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna clicks on Submit button (completed)" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna select products (completed)" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna product goto" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna clicks on Icon cart" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna clicks on Icon cart (completed)" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" Anna product goto (completed)" width="1080"/>
-                <img src="557e13b0e467d95e2f398fc6a6b85e1fa4cfd0dac8fd295a1a58f5659bce0fb3.png" title=" When select the productos and add to cart
+                <img src="ef5e5661be359d707542d7db01f78959d20d62a8c5568c4da8ae1911c44fb307.png" title=" Anna select products" width="1080"/>
+                <img src="af61830f5fd46d0bedd916915b9cc6ed63b7aed6c30736c2f175ac64dfeb5894.png" title=" Anna clicks on Submit button" width="1080"/>
+                <img src="983146bdbda8a040cae826147f2558a5acc3ba3d599982d85d3f9e44f9eaf04a.png" title=" Anna clicks on Submit button (completed)" width="1080"/>
+                <img src="8b8147513a80ee16ed8ea4db98b2cdf4b0ae09cb2e709d534b5818bb60f118c4.png" title=" Anna clicks on Submit button" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna clicks on Submit button (completed)" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna select products (completed)" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna product goto" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna clicks on Icon cart" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna clicks on Icon cart (completed)" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" Anna product goto (completed)" width="1080"/>
+                <img src="1131adefb245f7e629cbe8caf7525087c732b55b90267d657d38ff26ed1bb910.png" title=" When select the products and add to cart
 | Product |
 | PG 3 |
 | Jordan Lift Off | (completed)" width="1080"/>
-                <img src="1f07864621866741dc9bbf523aa4d6941d01a3901007a10874681c7c3356f406.png" title=" Then validate the products" width="1080"/>
-                <img src="1f07864621866741dc9bbf523aa4d6941d01a3901007a10874681c7c3356f406.png" title=" Then check product the should be (true)" width="1080"/>
-                <img src="24667bbfd738ac17d278ced3678acdb0bc1189b30ff61a2c790d3a881bc47baa.png" title=" Then check product the should be (true) (completed)" width="1080"/>
-                <img src="24667bbfd738ac17d278ced3678acdb0bc1189b30ff61a2c790d3a881bc47baa.png" title=" Then validate the products (completed)" width="1080"/>
-                <img src="24667bbfd738ac17d278ced3678acdb0bc1189b30ff61a2c790d3a881bc47baa.png" title=" And total amount in the cart" width="1080"/>
-                <img src="24667bbfd738ac17d278ced3678acdb0bc1189b30ff61a2c790d3a881bc47baa.png" title=" Then check total the should be (true)" width="1080"/>
-                <img src="24667bbfd738ac17d278ced3678acdb0bc1189b30ff61a2c790d3a881bc47baa.png" title=" And total amount in the cart (completed)" width="1080"/>
-                <img src="8586134ab721d3bec188195476e310a2c57b992eff533edcdd993b429eb7524c.png" title=" And navigate on webview" width="1080"/>
-                <img src="8586134ab721d3bec188195476e310a2c57b992eff533edcdd993b429eb7524c.png" title=" Anna navigate" width="1080"/>
-                <img src="8586134ab721d3bec188195476e310a2c57b992eff533edcdd993b429eb7524c.png" title=" Anna clicks on Button cart" width="1080"/>
-                <img src="8586134ab721d3bec188195476e310a2c57b992eff533edcdd993b429eb7524c.png" title=" Anna enters 'hervin' into Textbox word to search" width="1080"/>
-                <img src="7d99ec36980f4cf858c68ca6db1e45e5db5ff525bfeea7bb0272b467069b1f4f.png" title=" Anna enters 'hervin' into Textbox word to search (completed)" width="1080"/>
-                <img src="7d99ec36980f4cf858c68ca6db1e45e5db5ff525bfeea7bb0272b467069b1f4f.png" title=" Anna navigate" width="1080"/>
-                <img src="4bcdcca247148e4831d5be29d2f84b2607d312932249403554f9e68f3ca7aafb.png" title=" Anna navigate" width="1080"/>
-                <img src="4bcdcca247148e4831d5be29d2f84b2607d312932249403554f9e68f3ca7aafb.png" title=" Anna navigate (completed)" width="1080"/>
-                <img src="4bcdcca247148e4831d5be29d2f84b2607d312932249403554f9e68f3ca7aafb.png" title=" And navigate on webview (completed): <span class='success-color'>SUCCESS</span>" width="1080"/>
+                <img src="c3f98df1720b6202717670aa259a3667d84c179ac4480710ab09c9f3758d5cea.png" title=" Then validate the products" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" Then check product the should be (true)" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" Then check product the should be (true) (completed)" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" Then validate the products (completed)" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" And total amount in the cart" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" Then check total the should be (true)" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" And total amount in the cart (completed)" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" And navigate on webview" width="1080"/>
+                <img src="dfcfdfb1c367fe7fc54c06ab04b3543f35106acd12240bfa4ebb2bd0bd924081.png" title=" Anna navigate" width="1080"/>
+                <img src="907709339b3eec1085cc84cd3eeeb4e2761a3b4ae5dbf740dc871de6ea844a83.png" title=" Anna clicks on Button cart" width="1080"/>
+                <img src="907709339b3eec1085cc84cd3eeeb4e2761a3b4ae5dbf740dc871de6ea844a83.png" title=" Anna enters 'hervin' into Textbox word to search" width="1080"/>
+                <img src="589eacba7834959950fb90d153242dd93a80a630281e5e624b9c78b27eb56270.png" title=" Anna enters 'hervin' into Textbox word to search (completed): <span class='error-color'>ERROR</span>" width="1080"/>
             </div>
         </div>
 

@@ -14,6 +14,7 @@ public class SearchListView implements Interaction {
     public SearchListView(String countryName){
         this.countryName=countryName;
     }
+
     public static SearchListView country(String countryName) {
         return Tasks.instrumented(SearchListView.class, countryName);
     }

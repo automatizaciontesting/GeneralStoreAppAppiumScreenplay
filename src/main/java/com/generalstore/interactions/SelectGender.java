@@ -4,18 +4,27 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
+import net.serenitybdd.screenplay.conditions.Check;
 
 import static com.generalstore.ui.HomeStore.RDB_FEMALE;
+import static com.generalstore.ui.HomeStore.RDB_MALE;
 
 public class SelectGender implements Task {
-    public static SelectGender femaleOrMale() {
-        return Tasks.instrumented(SelectGender.class);
+
+    private String selectGender;
+    public SelectGender(String selectGender){
+        this.selectGender = selectGender;
+    }
+    public static SelectGender femaleOrMale(String selectGender) {
+        return Tasks.instrumented(SelectGender.class,selectGender);
     }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(RDB_FEMALE)
+                Check.whether(this.selectGender.equalsIgnoreCase("Male")).andIfSo(
+                        Click.on(RDB_MALE)).otherwise(Click.on(RDB_FEMALE))
+
         );
     }
 }

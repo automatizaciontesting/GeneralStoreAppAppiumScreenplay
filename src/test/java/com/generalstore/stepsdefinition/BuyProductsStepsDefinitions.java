@@ -28,9 +28,9 @@ public class BuyProductsStepsDefinitions {
     }
 
     @Given("{string} has a list of producto")
-    public void aListOfProductoDisplayed(String actor) {
+    public void aListOfProductoDisplayed(String actor,DataTable dataTable) {
         OnStage.theActorCalled(actor).
-                attemptsTo(LoadHome.listCountries()
+                attemptsTo(LoadHome.listCountries(dataTable)
                 );
     }
     @When("select the products and add to cart")

@@ -2,6 +2,8 @@ Feature: As user, I want to buy some items
 
   Scenario: Buy some items in General Store
     Given "Anna" has a list of producto
+      | Country | Name   | Gender |
+      | Albania | Hervin | Male   |
     When select the products and add to cart
       | Product |
       | PG 3    |
