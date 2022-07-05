@@ -1,12 +1,9 @@
 package com.generalstore.stepsdefinition;
 
-import com.generalstore.interactions.AddName;
 import com.generalstore.interactions.Navigate;
 import com.generalstore.questions.CheckProductThe;
 import com.generalstore.questions.CheckTotalThe;
 import com.generalstore.tasks.LoadHome;
-import com.generalstore.interactions.SelectGoShop;
-import com.generalstore.interactions.SelectGender;
 import com.generalstore.tasks.ProductGoto;
 import com.generalstore.tasks.SelectProducts;
 import io.cucumber.datatable.DataTable;
@@ -14,11 +11,10 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
-
-import static org.hamcrest.Matchers.equalTo;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+import static org.hamcrest.Matchers.*;
 
 public class BuyProductsStepsDefinitions {
 
@@ -43,16 +39,18 @@ public class BuyProductsStepsDefinitions {
     }
     @Then("validate the products")
     public void validateTheProducts() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckProductThe.productcInCart(),
-                equalTo(true)
-        ));
+        OnStage.theActorInTheSpotlight().should(
+                seeThat(CheckProductThe.productInCart(), not(hasItem("false")))
+        );
     }
+
     @Then("total amount in the cart")
     public void totalAmountInTheCart() {
-        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(CheckTotalThe.amountInCart(),
-                equalTo(true)
-        ));
+        OnStage.theActorInTheSpotlight().should(
+                seeThat(CheckTotalThe.amountInCart(), not(hasItem("false")))
+        );
     }
+
     @Then("navigate on webview")
     public void navigateOnWebview() {
         OnStage.theActorInTheSpotlight().attemptsTo(

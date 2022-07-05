@@ -1,186 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.generalstore.runner.BuyProductsRunner" tests="1" skipped="0" failures="1" errors="0" timestamp="2022-07-04T20:56:41" hostname="DESKTOP-PDJSF9M" time="71.218">
+<testsuite name="com.generalstore.runner.BuyProductsRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2022-07-05T22:37:38" hostname="DESKTOP-PDJSF9M" time="68.613">
   <properties/>
-  <testcase name="Buy some items in General Store" classname="com.generalstore.runner.BuyProductsRunner" time="71.218">
-    <failure message="org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)&#10;Command duration or timeout: 0 milliseconds&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-PDJSF9M', ip: '192.168.173.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: emulator-5558, hub: http://127.0.0.1:4723/wd/hub, loggingPrefs: {}, noReset: true, platformName: Android, platformVersion: 9, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, hub: http://127.0.0.1:4723/wd/hub, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}&#10;Session ID: 9e41e984-e9ea-41a7-92fe-18f8c6ce5392&#10;*** Element info: {Using=xpath, value=//*[@text='Buscar con Google']/following-sibling::android.view.View/android.widget.EditText}" type="org.openqa.selenium.NoSuchElementException">org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-PDJSF9M', ip: '192.168.173.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: emulator-5558, hub: http://127.0.0.1:4723/wd/hub, loggingPrefs: {}, noReset: true, platformName: Android, platformVersion: 9, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, hub: http://127.0.0.1:4723/wd/hub, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9e41e984-e9ea-41a7-92fe-18f8c6ce5392
-*** Element info: {Using=xpath, value=//*[@text='Buscar con Google']/following-sibling::android.view.View/android.widget.EditText}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:231)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:226)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1328)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:834)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.lambda$performAs$0(EnterValueIntoTarget.java:19)
-	at java.base/java.util.Optional.ifPresent(Optional.java:176)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$K4GPgmR6.performAs$accessor$VKOvomVl(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$K4GPgmR6.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
-	at com.generalstore.interactions.Navigate.performAs(Navigate.java:25)
-	at com.generalstore.interactions.Navigate$ByteBuddy$hcDQuZnS.performAs$accessor$SfvI5o4L(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.generalstore.interactions.Navigate$ByteBuddy$hcDQuZnS.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
-	at com.generalstore.stepsdefinition.BuyProductsStepsDefinitions.navigateOnWebview(BuyProductsStepsDefinitions.java:58)
-	at ✽.navigate on webview(file:///C:/Users/Admin/IdeaProjects/GeneralStore/src/test/resources/features/buyProducts.feature:13)
-</failure>
-  </testcase>
+  <testcase name="Buy some items in General Store" classname="com.generalstore.runner.BuyProductsRunner" time="68.613"/>
   <system-out><![CDATA[
-?[31mFailed scenarios:?[0m
-file:///C:/Users/Admin/IdeaProjects/GeneralStore/src/test/resources/features/buyProducts.feature:3 # Buy some items in General Store
-
-1 Scenarios (?[31m1 failed?[0m)
-5 Steps (?[31m1 failed?[0m, ?[32m4 passed?[0m)
-1m11,372s
-
-
-org.openqa.selenium.NoSuchElementException: An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 0 milliseconds
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'DESKTOP-PDJSF9M', ip: '192.168.173.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.2'
-Driver info: io.appium.java_client.android.AndroidDriver
-Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, databaseEnabled: false, desired: {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: emulator-5558, hub: http://127.0.0.1:4723/wd/hub, loggingPrefs: {}, noReset: true, platformName: Android, platformVersion: 9, udid: emulator-5554}, deviceApiLevel: 30, deviceManufacturer: unknown, deviceModel: Android SDK built for x86, deviceName: emulator-5554, deviceScreenDensity: 440, deviceScreenSize: 1080x2280, deviceUDID: emulator-5554, hub: http://127.0.0.1:4723/wd/hub, javascriptEnabled: true, locationContextEnabled: false, loggingPrefs: org.openqa.selenium.logging..., networkConnectionEnabled: true, noReset: true, pixelRatio: 2.75, platform: LINUX, platformName: Android, platformVersion: 11, statBarHeight: 135, takesScreenshot: true, udid: emulator-5554, viewportRect: {height: 1842, left: 0, top: 135, width: 1080}, warnings: {}, webStorageEnabled: false}
-Session ID: 9e41e984-e9ea-41a7-92fe-18f8c6ce5392
-*** Element info: {Using=xpath, value=//*[@text='Buscar con Google']/following-sibling::android.view.View/android.widget.EditText}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
-	at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
-	at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:41)
-	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:61)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElementByXPath(DefaultGenericMobileDriver.java:151)
-	at io.appium.java_client.AppiumDriver.findElementByXPath(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElementByXPath(AndroidDriver.java:1)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:57)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at net.thucydides.core.webdriver.WebDriverFacade.findElement(WebDriverFacade.java:222)
-	at net.serenitybdd.core.pages.WebElementResolverByLocator.resolveForDriver(WebElementResolverByLocator.java:25)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getResolvedElement(WebElementFacadeImpl.java:231)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.getElement(WebElementFacadeImpl.java:226)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.clear(WebElementFacadeImpl.java:1328)
-	at net.serenitybdd.core.pages.WebElementFacadeImpl.type(WebElementFacadeImpl.java:834)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.lambda$performAs$0(EnterValueIntoTarget.java:19)
-	at java.base/java.util.Optional.ifPresent(Optional.java:176)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget.performAs(EnterValueIntoTarget.java:18)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$K4GPgmR6.performAs$accessor$VKOvomVl(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at net.serenitybdd.screenplay.actions.EnterValueIntoTarget$ByteBuddy$K4GPgmR6.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
-	at com.generalstore.interactions.Navigate.performAs(Navigate.java:25)
-	at com.generalstore.interactions.Navigate$ByteBuddy$hcDQuZnS.performAs$accessor$SfvI5o4L(Unknown Source)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at net.thucydides.core.steps.StepInterceptor.invokeMethod(StepInterceptor.java:504)
-	at net.thucydides.core.steps.StepInterceptor.executeTestStepMethod(StepInterceptor.java:484)
-	at net.thucydides.core.steps.StepInterceptor.runTestStep(StepInterceptor.java:458)
-	at net.thucydides.core.steps.StepInterceptor.runOrSkipMethod(StepInterceptor.java:210)
-	at net.thucydides.core.steps.StepInterceptor.testStepResult(StepInterceptor.java:197)
-	at net.thucydides.core.steps.StepInterceptor.intercept(StepInterceptor.java:85)
-	at net.thucydides.core.steps.ProxyConfiguration$InterceptorDispatcher.intercept(ProxyConfiguration.java:51)
-	at com.generalstore.interactions.Navigate$ByteBuddy$hcDQuZnS.performAs(Unknown Source)
-	at net.serenitybdd.screenplay.Actor.performTask(Actor.java:274)
-	at net.serenitybdd.screenplay.Actor.perform(Actor.java:254)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:195)
-	at net.serenitybdd.screenplay.Actor.attemptsTo(Actor.java:202)
-	at com.generalstore.stepsdefinition.BuyProductsStepsDefinitions.navigateOnWebview(BuyProductsStepsDefinitions.java:58)
-	at ?.navigate on webview(file:///C:/Users/Admin/IdeaProjects/GeneralStore/src/test/resources/features/buyProducts.feature:13)
+1 Scenarios (?[32m1 passed?[0m)
+5 Steps (?[32m5 passed?[0m)
+1m8,770s
 
 
 ]]></system-out>
@@ -209,17 +34,15 @@ Session ID: 9e41e984-e9ea-41a7-92fe-18f8c6ce5392
 
 Buy some items in General Store(as-user--i-want-to-buy-some-items;buy-some-items-in-general-store)
 --------------------------------------------------------------------------------
-jul. 04, 2022 3:56:50 P. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+jul. 05, 2022 5:37:46 P. M. io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
 INFORMACIÓN: Detected dialect: OSS
-[Test worker] ERROR  - 
-  _____   ___   ___   _____     ___   ___   ___    ___    ___ 
- |_   _| | __| / __| |_   _|   | __| | _ \ | _ \  / _ \  | _ \
-   | |   | _|  \__ \   | |     | _|  |   / |   / | (_) | |   /
-   |_|   |___| |___/   |_|     |___| |_|_\ |_|_\  \___/  |_|_\
+[Test worker] INFO  - 
+  _____   ___   ___   _____     ___     _     ___   ___   ___   ___  
+ |_   _| | __| / __| |_   _|   | _ \   /_\   / __| / __| | __| |   \ 
+   | |   | _|  \__ \   | |     |  _/  / _ \  \__ \ \__ \ | _|  | |) |
+   |_|   |___| |___/   |_|     |_|   /_/ \_\ |___/ |___/ |___| |___/ 
 
 Buy some items in General Store
----------------------------------------------------------------
-[Test worker] ERROR  -     Test failed at step: Anna enters 'hervin' into Textbox word to search
-[Test worker] ERROR  -     An element could not be located on the page using the given search parameters. (WARNING: The server did not provide any stacktrace information)
+----------------------------------------------------------------------
 ]]></system-err>
 </testsuite>

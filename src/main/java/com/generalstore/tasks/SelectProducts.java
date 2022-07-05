@@ -2,8 +2,6 @@ package com.generalstore.tasks;
 
 import com.generalstore.utils.SelectedItems;
 import com.generalstore.utils.Helpers;
-import com.google.common.collect.ArrayListMultimap;
-import com.google.common.collect.Multimap;
 import io.appium.java_client.MobileBy;
 import io.cucumber.datatable.DataTable;
 import net.serenitybdd.core.annotations.findby.By;
@@ -14,6 +12,7 @@ import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.targets.Target;
 import net.serenitybdd.screenplay.waits.WaitUntil;
+import net.thucydides.core.annotations.Step;
 
 import java.util.*;
 
@@ -34,6 +33,7 @@ public class SelectProducts implements Task {
         return Tasks.instrumented(SelectProducts.class,dataTable);
     }
 
+    @Step("{0} select product and add to cart ")
     @Override
     public <T extends Actor> void performAs(T actor) {
 

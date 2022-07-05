@@ -1,0 +1,6 @@
+projectKey=Proyecto_automatizacion_pom
+serverUrl=http://localhost:9000
+serverVersion=8.9.8.54436
+dashboardUrl=http://localhost:9000/dashboard?id=Proyecto_automatizacion_pom
+ceTaskId=AYHQm9AI3nEzPHC_PI1e
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYHQm9AI3nEzPHC_PI1e

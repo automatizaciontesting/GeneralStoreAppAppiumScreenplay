@@ -1,38 +1,44 @@
 package com.generalstore.questions;
 
 import com.generalstore.utils.SelectedItems;
-import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.targets.Target;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Step;
+import org.openqa.selenium.By;
 
-import java.util.HashMap;
+
+import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.Map;
 
-public class CheckProductThe implements Question<Boolean> {
+
+public class CheckProductThe implements Question<List<String>> {
 
     SelectedItems selItem = new SelectedItems();
-    private static Map<String, List<String>> totalItems = new HashMap<>();
+    private static List<String> addItemValidate = new ArrayList<>();
 
-    public static CheckProductThe productcInCart() {
+    public static CheckProductThe productInCart() {
         return new CheckProductThe();
     }
 
     @Step("{0} validate visible name product'")
     @Override
-    public Boolean answeredBy(Actor actor) {
-        Target LBL_PRODUCT_NAME = null;
+    public List<String> answeredBy(Actor actor) {
 
         Iterator<String> iterate = selItem.getTotalProducts().iterator();
+
         while(iterate.hasNext()){
             String strItem = iterate.next();
-            LBL_PRODUCT_NAME=Target.the("Submit button").located(By.xpath("//*[@resource-id='com.androidsample.generalstore:id/productName' and @text='"+strItem+"']"));
-            LBL_PRODUCT_NAME.resolveFor(actor).isVisible();
+            WebElementFacade submitButton = BrowseTheWeb.as(actor).find(By.xpath("//*[@resource-id='com.androidsample.generalstore:id/productName' and @text='"+strItem+"']"));
+            if(submitButton.isVisible()){
+                addItemValidate.add("true");
+            }else{
+                addItemValidate.add("false");
+            }
         }
-
-        return LBL_PRODUCT_NAME.resolveFor(actor).isVisible();
+        return addItemValidate;
     }
+
 }

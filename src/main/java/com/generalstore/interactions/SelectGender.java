@@ -5,6 +5,7 @@ import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.conditions.Check;
+import net.thucydides.core.annotations.Step;
 
 import static com.generalstore.ui.HomeStore.RDB_FEMALE;
 import static com.generalstore.ui.HomeStore.RDB_MALE;
@@ -19,6 +20,7 @@ public class SelectGender implements Task {
         return Tasks.instrumented(SelectGender.class,selectGender);
     }
 
+    @Step("{0} select gender ")
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(

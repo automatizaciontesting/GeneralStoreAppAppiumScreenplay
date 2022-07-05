@@ -5,7 +5,6 @@ import net.serenitybdd.core.pages.PageObject;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class HomeStore extends PageObject {
-    public HomeStore(){}
 
     public static final Target CMD_COUNTRY = Target.the("Listview country")
             .located(By.xpath("//*[@resource-id='com.androidsample.generalstore:id/spinnerCountry']"));

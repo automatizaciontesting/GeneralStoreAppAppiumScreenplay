@@ -1,32 +1,38 @@
 package com.generalstore.questions;
 
 import com.generalstore.utils.SelectedItems;
-import net.serenitybdd.core.annotations.findby.By;
+import net.serenitybdd.core.pages.WebElementFacade;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Question;
-import net.serenitybdd.screenplay.targets.Target;
+import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
 import net.thucydides.core.annotations.Step;
-import java.util.Iterator;
+import org.openqa.selenium.By;
 
-public class CheckTotalThe implements Question<Boolean> {
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class CheckTotalThe implements Question<List<String>> {
 
     SelectedItems selItem = new SelectedItems();
+    private static List<String> addAmount = new ArrayList<>();
 
     public static CheckTotalThe amountInCart() {
         return new CheckTotalThe();
     }
     @Step("{0} validate visible cost item'")
     @Override
-    public Boolean answeredBy(Actor actor) {
-        Target LBL_PRODUCT_NAME = null;
-
+    public List<String> answeredBy(Actor actor) {
         Iterator<String> iterate = selItem.getAmountTotal().iterator();
         while(iterate.hasNext()){
-            String StrPrice = iterate.next();
-            LBL_PRODUCT_NAME=Target.the("Submit button").located(By.xpath("//*[@resource-id='com.androidsample.generalstore:id/productPrice' and @text='"+StrPrice+"']"));
-            LBL_PRODUCT_NAME.resolveFor(actor).isVisible();
+            String strItem = iterate.next();
+            WebElementFacade visibleObject = BrowseTheWeb.as(actor).find(By.xpath("//*[@resource-id='com.androidsample.generalstore:id/productPrice' and @text='"+strItem+"']"));
+            if(visibleObject.isVisible()){
+                addAmount.add("true");
+            }else{
+                addAmount.add("false");
+            }
         }
-
-        return LBL_PRODUCT_NAME.resolveFor(actor).isVisible();
+        return addAmount;
     }
 }

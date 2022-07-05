@@ -41,6 +41,10 @@ dependencies {
     implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}"
     implementation "net.serenity-bdd:serenity-cucumber:${serenityCucumberVersion}"
     implementation "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-screenplay-webdriver:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-ensure:${serenityCoreVersion}"
+
     testImplementation "junit:junit:${junitVersion}"
     testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.8.1'
     testImplementation 'org.junit.jupiter:junit-jupiter:5.7.1'
@@ -49,6 +53,7 @@ dependencies {
     implementation 'org.dom4j:dom4j:2.1.1'
     implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.0.0-M5'
     implementation 'io.appium:java-client:7.6.0'
+
 
 }
 

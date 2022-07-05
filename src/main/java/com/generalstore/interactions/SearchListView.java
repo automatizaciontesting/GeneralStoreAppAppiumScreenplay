@@ -6,6 +6,7 @@ import net.serenitybdd.screenplay.Interaction;
 
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.abilities.BrowseTheWeb;
+import net.thucydides.core.annotations.Step;
 
 
 public class SearchListView implements Interaction {
@@ -19,6 +20,7 @@ public class SearchListView implements Interaction {
         return Tasks.instrumented(SearchListView.class, countryName);
     }
 
+    @Step("{0} search to specific product ")
     @Override
     public <T extends Actor> void performAs(T actor) {
         BrowseTheWeb.as(actor).getDriver().findElement(
